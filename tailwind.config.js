@@ -1,20 +1,23 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.tsx"],
+  safelist: ['md:pt-12', 'md:pt-24'],
   theme: {
     extend: {
       colors: {
-        "primary-cyan": "hsl(180, 66%, 49%)",
+        "primary-cyan": "hsla(180, 66%, 49%, 1)",
         "primary-cyan-hover": "hsl(180, 56%, 75%)",
-        "primary-dark-violet": "hsl(257, 27%, 26%)",
+        "primary-dark-violet": "hsla(257, 26%, 33%, 1)",
+        "primary-darkest-violet": "hsla(257, 27%, 26%, 1)",
         "secondary-red": "hsl(0, 87%, 67%)",
-        "neutral-gray": "hsl(0, 0%, 75%)",
-        "neutral-grayish-violet": "hsl(257, 8%, 63%)",
+        "neutral-gray": "hsla(225, 32%, 95%, 1)",
+        "neutral-grayish-violet": "hsla(257, 8%, 63%, 1)",
         "neutral-very-dark-blue": "hsl(257, 11%, 22%)",
         "neutral-very-dark-violet": "hsl(260, 8%, 14%)",
       },
       backgroundImage: {
         "bg-shorten-desktop": "url('./src/assets/bg-shorten-desktop.svg')",
+        "bg-boost-desktop": "url('./src/assets/bg-boost-desktop.svg')"
         // "mobile-section-pattern":
         //   "url('/bg-pattern-circles.svg'), linear-gradient(135deg, #2D2E40 0%, #3F4164 100%)",
       },
