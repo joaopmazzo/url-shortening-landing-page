@@ -34,10 +34,6 @@ const ShortenComponent = () => {
             key={index}
           />
         ))}
-        <ShortenCard
-          baseUrl="https://www.frontendmentor.io"
-          shortenUrl="https://rel.ink/k4lKyk"
-        />
       </div>
     </>
   );

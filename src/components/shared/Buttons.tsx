@@ -1,7 +1,7 @@
 interface ButtonProps {
   text: string;
   link?: string;
-  onClickFunction?: () => void;
+  onClickFunction?: (e: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
 export const ButtonLinkHeader = ({ text, link }: ButtonProps) => {
